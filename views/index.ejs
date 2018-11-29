@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Food Stop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="../public/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../public/CSS/creative.min.css" rel="stylesheet">
+
+    <link href="../public/CSS/creativeStyle.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../public/CSS/carousel.css">
+
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Food Stop</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <!-- Login -->
+            <li class="nav-item">
+              <a href="#" data-toggle="modal" data-target="#modal" class="nav-link js-scroll-trigger">Login</a>
+            </li>
+            <!-- Register -->
+            <li class="nav-item">
+              <a href="#" data-toggle="modal" data-target="#modalRegister" class="nav-link js-scroll-trigger" >Register</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Login -->   <!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="login" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+      <form action="/register" method="POST">
+              <div class="form-group">
+            <form action="/login" method="POST">
+              <input class="form-control" type="text" name="username" placeholder="username"><br>
+              <input class="form-control" type="password" name="password" placeholder="password">
+            </form>
+          </div>
+      </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Register pop up -->           <!-- Modal -->
+
+<div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form action="/register" method="POST">
+        <div class="form-group">
+          <div style="min-height: 20px; margin-bottom: 10px">
+            <div class="float-left">
+              <input type="radio" name="restaurant" value="true">  Restaurant
+            </div>
+            <div class="float-right">
+              <input type="radio" name="restaurant" value="false"> Charity
+            </div>
+          </div>
+          <input type="text" class="form-control" name="username" placeholder="username"><br>
+          <input type="text" class="form-control" name="email" placeholder="email"><br>
+          <input type="text" class="form-control" name="phone" placeholder="phone"><br>
+          <input type="text" class="form-control" name="adress" placeholder="adress"><br>
+          <input type="password" class="form-control" name="password" placeholder="password">
+      </div>
+      </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="/login"> login </a>
+        <button type="button" class="btn btn-primary">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOD STOP logo -->
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+
+              <img class="hvr-bounce-in" src="../public/images/Banner2.svg">
+
+          </div>
+
+<!-- Stop food waste join our platform -->
+
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5"></p>
+            <a class="js-scroll-trigger" href="#about">
+            <img src="../public/images/Scrolldown.svg" class="hvr-bounce-in">
+          </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- Scroll down  -->
+
+<!-- What is FOOD STOP -->
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+           <img src="../public/Images/whatisfoodstop.svg">
+            <hr class="light my-4">
+            <p class="text-faded mb-4">Food Stop is a platform that has started the war against FOOD WASTE!. </p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- REGISTER/LOGIN LINK -->
+
+    <section id="services">
+
+   
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <img src="../public/Images/charities.svg" class="hvr-bounce-in">
+              <h3 class="mb-3">for Charities</h3>
+              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+            </div>
+          </div>
+         
+          <div class="col-lg-6 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <img src="public/Images/donate.svg" class="hvr-bounce-in">
+              <h3 class="mb-3">Ready to Donate</h3>
+              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+            </div>
+          </div>
+        
+          <div class="col-lg-8 mx-auto text-center">
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#carouselStyle">Partners</a>
+          </div>
+        </div>
+      </div>
+
+<!-- SLIDE SHOW -->
+
+
+<section id="carouselStyle" class="bg-primary carouselStyle">
+
+<div class="container">
+        <div class="col-lg-8 mx-auto text-center">
+          <img src="../public/Images/partners.svg">
+
+        </div>
+   <section class="customer-logos slider">
+      <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+   </section>
+</div>
+
+
+</section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <img src="public/Images/contact.svg" style="width: 500px">
+            <hr class="my-4">
+            <p class="mb-5"><h2>If you have any questions feel free to contact us</h2></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
+            <p>+31(0)123456789</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+            <p>
+              <a href="mailto:your-email@your-domain.com">info@foodstop.nl</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../public/vendor/jquery/jquery.min.js"></script>
+    <script src="../public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../public/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../public/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="../public/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../public/js/creative.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="../public/js/slider.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+  </body>
+
+</html>

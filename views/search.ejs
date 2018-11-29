@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Food Stop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/creative.min.css" rel="stylesheet">
+
+    <link href="../css/creativeStyle.css" rel="stylesheet">
+
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Food Stop</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <!-- Login -->
+            <li class="nav-item">
+              <a href="#" data-toggle="modal" data-target="#modal" class="nav-link js-scroll-trigger">Logout</a>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+<!-- FOOD STOP logo -->
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+
+              <img class="hvr-bounce-in" src="../img/welcome.svg">
+
+          </div>
+
+<!-- Stop food waste join our platform -->
+
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5"></p>
+            <a class="js-scroll-trigger" href="#about">
+            <img src="../img/Scrolldown.svg" class="hvr-bounce-in">
+          </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- Scroll down  -->
+
+<!-- Welcome -->
+    
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+  
+            <form action="/search" method="POST"></form>
+             <div class="text-white">
+<p><h2>Welcome <%= user.username %></h2></p>
+          <hr class="light my-4">
+            <p class="text-faded mb-4">
+
+<% if (user) {%>
+
+<h3>Here your personal informations :</h3>
+
+<p>Email: <%= user.email %></p>
+<p>Adress: <%= user.adress %></p>
+<p>Telephonenumber: <%= user.phone %></p>
+<% } %>
+
+              </div>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#" data-toggle="modal" data-target="#modalSearch">Search donation(s)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- Search -->   <!-- Modal -->
+
+<div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Search food donation
+</h5>
+        <button type="button" class="close" data-dismiss="login" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+     <form action="/donatefood" method="POST">
+
+
+
+<form action=“/searchfood” method=“POST”>
+  <input class="form-control" type=“text” name=“name” value=“” placeholder=“name" of the food”><br>
+  <input class="form-control" type=“submit” name=“Submit” placeholder="">
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" name="Submit" type="button" class="btn btn-primary">Donate</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <img src="../img/contact.svg" style="width: 500px">
+            <hr class="my-4">
+            <p class="mb-5"><h2>If you have any questions feel free to contact us</h2></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
+            <p>+31(0)123456789</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+            <p>
+              <a href="mailto:your-email@your-domain.com">info@foodstop.nl</a>
+            </p> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../js/creative.min.js"></script>
+
+  </body>
+
+</html>
+
